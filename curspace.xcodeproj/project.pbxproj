@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		6801F17D142B904A00D6BDB1 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 6801F17C142B904A00D6BDB1 /* main.c */; };
 		6801F17F142B904A00D6BDB1 /* curspace.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6801F17E142B904A00D6BDB1 /* curspace.1 */; };
+		6801F186142B935000D6BDB1 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6801F185142B935000D6BDB1 /* CoreServices.framework */; };
+		6801F18C142B940A00D6BDB1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6801F18B142B940A00D6BDB1 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +30,8 @@
 		6801F178142B904A00D6BDB1 /* curspace */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = curspace; sourceTree = BUILT_PRODUCTS_DIR; };
 		6801F17C142B904A00D6BDB1 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		6801F17E142B904A00D6BDB1 /* curspace.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = curspace.1; sourceTree = "<group>"; };
+		6801F185142B935000D6BDB1 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		6801F18B142B940A00D6BDB1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6801F18C142B940A00D6BDB1 /* Cocoa.framework in Frameworks */,
+				6801F186142B935000D6BDB1 /* CoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +50,8 @@
 		6801F16D142B904A00D6BDB1 = {
 			isa = PBXGroup;
 			children = (
+				6801F18B142B940A00D6BDB1 /* Cocoa.framework */,
+				6801F185142B935000D6BDB1 /* CoreServices.framework */,
 				6801F17B142B904A00D6BDB1 /* curspace */,
 				6801F179142B904A00D6BDB1 /* Products */,
 			);
