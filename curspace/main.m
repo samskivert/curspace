@@ -34,7 +34,7 @@ int main (int argc, char * const argv[])
     CGSSpace spaceId = [CFArrayGetValueAtIndex(spaces, ii) intValue];
     if (CGSSpaceGetType(CGSDefaultConnection, spaceId) == kCGSSpaceSystem)
       continue;
-    printf("%d\n", spaceId);
+    printf("%lld\n", spaceId);
   }
 
   CFRelease(spaces);

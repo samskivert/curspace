@@ -4,9 +4,9 @@ curspace
 This is a simple command line tool that outputs a number identifying the
 current Space for Mac OS X.
 
-The code is from: https://gist.github.com/1129406
+The code is stolen from http://xmonad.org/
 
-I just turned it into an XCode project and added the appropriate frameworks.
+I extracted the appropriate bits and turned it into a simple XCode project.
 
 I use it to have separate emacs instances on different Mac OS spaces such that
 invoking `emacs filename` in a terminal on that space opens the file in the
