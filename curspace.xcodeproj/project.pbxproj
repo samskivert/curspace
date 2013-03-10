@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6801F17D142B904A00D6BDB1 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 6801F17C142B904A00D6BDB1 /* main.c */; };
 		6801F17F142B904A00D6BDB1 /* curspace.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6801F17E142B904A00D6BDB1 /* curspace.1 */; };
 		6801F186142B935000D6BDB1 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6801F185142B935000D6BDB1 /* CoreServices.framework */; };
 		6801F18C142B940A00D6BDB1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6801F18B142B940A00D6BDB1 /* Cocoa.framework */; };
+		6848C60316ED350B000E624C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6848C60216ED350B000E624C /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,10 +28,10 @@
 
 /* Begin PBXFileReference section */
 		6801F178142B904A00D6BDB1 /* curspace */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = curspace; sourceTree = BUILT_PRODUCTS_DIR; };
-		6801F17C142B904A00D6BDB1 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		6801F17E142B904A00D6BDB1 /* curspace.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = curspace.1; sourceTree = "<group>"; };
 		6801F185142B935000D6BDB1 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		6801F18B142B940A00D6BDB1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		6848C60216ED350B000E624C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +68,7 @@
 		6801F17B142B904A00D6BDB1 /* curspace */ = {
 			isa = PBXGroup;
 			children = (
-				6801F17C142B904A00D6BDB1 /* main.c */,
+				6848C60216ED350B000E624C /* main.m */,
 				6801F17E142B904A00D6BDB1 /* curspace.1 */,
 			);
 			path = curspace;
@@ -99,6 +99,9 @@
 /* Begin PBXProject section */
 		6801F16F142B904A00D6BDB1 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
 			buildConfigurationList = 6801F172142B904A00D6BDB1 /* Build configuration list for PBXProject "curspace" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -121,7 +124,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6801F17D142B904A00D6BDB1 /* main.c in Sources */,
+				6848C60316ED350B000E624C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +136,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -147,6 +154,7 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
@@ -159,6 +167,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -167,6 +179,7 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
@@ -206,6 +219,7 @@
 				6801F184142B904A00D6BDB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
